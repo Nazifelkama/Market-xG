@@ -5,6 +5,7 @@
 This document defines the deterministic local sample market data fixture used in Phase 1.
 The fixture exists to support repeatable tests and early pipeline work before live data,
 validation logic, or external integrations are introduced.
+It is synthetic test data and not real S&P 500 market history.
 
 ## Fixture Location
 
@@ -20,6 +21,7 @@ It is a concrete reference dataset for the OHLCV contract, not a separate schema
 ## Data Characteristics
 
 - Synthetic but S&P 500-like daily OHLCV values.
+- Not real S&P 500 data.
 - Deterministic and committed to the repository for stable tests.
 - Daily rows with parseable dates sorted ascending.
 - Required columns only: `date`, `open`, `high`, `low`, `close`, `volume`.
@@ -33,10 +35,14 @@ It is a concrete reference dataset for the OHLCV contract, not a separate schema
 - Use it as the baseline example when discussing the Phase 1 data contract.
 - Keep the file deterministic so future test outcomes stay reproducible.
 - Replace or extend it only through a new ticket with explicit review.
+- Do not use it for financial conclusions.
+- Do not use it for backtesting.
 
 ## Non-Goals
 
 - This fixture is not live market data.
+- This fixture is not for financial conclusions.
+- This fixture is not for backtesting.
 - This fixture does not prove historical correctness versus external sources.
 - This ticket does not add validation code.
 - This ticket does not add indicators, scoring, reports, or fetching logic.

@@ -55,6 +55,10 @@ Sample Market Data Fixture: [docs/architecture/sample_market_data.md](docs/archi
 Phase 1 starts with deterministic local OHLCV sample data for repeatable tests and early
 pipeline work.
 
+Real Data Strategy: [docs/architecture/real_data_strategy.md](docs/architecture/real_data_strategy.md).
+Synthetic sample data is for engineering tests only and must not be treated as a basis for
+financial conclusions or historical backtesting.
+
 ## Project Structure
 
 ```text
