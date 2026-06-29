@@ -43,6 +43,10 @@ Definition of Done: [docs/test_strategy/definition_of_done.md](docs/test_strateg
 Relevant local checks happen before review, full CI is required before merge, and a ticket is
 Done only after merge to main.
 
+Roadmap Governance: [docs/product/roadmap_governance.md](docs/product/roadmap_governance.md).
+Roadmap changes must be intentional and traceable. Vision, phases, epics, tickets, PRs, and
+commits should link together.
+
 ## Project Structure
 
 ```text

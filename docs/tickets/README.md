@@ -40,3 +40,9 @@ the final automated quality gate before merge.
 Every ticket should be evaluated against `docs/test_strategy/definition_of_done.md`.
 Ticket-specific Definition of Done may add stricter requirements. A ticket becomes Done only
 after the global Definition of Done is satisfied.
+
+## Roadmap Traceability
+
+Tickets should trace back to a roadmap phase and epic. Roadmap changes follow
+`docs/product/roadmap_governance.md`. New ideas should be parked before they become
+implementation tickets.

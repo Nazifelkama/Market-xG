@@ -1,5 +1,11 @@
 # Market xG Roadmap
 
+## Roadmap Governance
+
+Roadmap changes follow `docs/product/roadmap_governance.md`. Future implementation work should
+be created as tickets under `docs/tickets/`. Later-phase ideas should be parked instead of
+implemented early.
+
 ## Phase 0: Product and Architecture Foundation
 
 Define the product philosophy, requirements, architecture, scoring model direction, testing strategy, and early architectural decisions.
@@ -27,4 +33,3 @@ Create a dashboard and scheduled reporting workflow for regular monitoring.
 ## Phase 6: Machine Learning and Adaptive Weighting
 
 Evaluate machine learning, adaptive weights, and more advanced calibration after the rule-based system has been validated historically.
-

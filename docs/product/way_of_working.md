@@ -98,6 +98,9 @@ If Codex sees a useful improvement outside the ticket, it should mention it as a
 not implement it. New ideas should become new tickets. Implementation tickets should not modify
 product philosophy unless explicitly requested.
 
+Roadmap and scope changes should follow roadmap governance. Roadmap governance is documented in
+`docs/product/roadmap_governance.md`.
+
 ## Phase Discipline
 
 Phase 0 is documentation, traceability, repo foundation, CI, and working agreement. Phase 1 starts only after Phase 0 is accepted. Market logic starts only in Phase 1 tickets.

@@ -2,6 +2,8 @@
 
 Status: Not Started
 Sprint: Sprint X
+Phase: Phase X
+Epic: Epic Name
 Type: Documentation / Repo / CI / Feature / Test / Backtest
 Owner: Codex
 Reviewer: QA / PM
@@ -13,6 +15,7 @@ Updated: YYYY-MM-DD
 ## Context
 
 Describe the project context, relevant decisions, and why this ticket exists.
+Link the ticket to the relevant roadmap phase and epic where possible.
 
 ## Goal
 
@@ -57,3 +60,4 @@ Record review feedback, QA notes, and follow-up observations.
 ## Decision Log
 
 Record implementation notes, assumptions, or decisions made while completing the ticket.
+Maintain roadmap traceability by linking decisions back to the relevant phase and epic where possible.
