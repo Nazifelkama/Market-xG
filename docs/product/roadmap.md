@@ -14,6 +14,10 @@ Define the product philosophy, requirements, architecture, scoring model directi
 
 Build the first local rule-based scoring engine with a small set of reliable inputs, deterministic calculations, and markdown report generation.
 
+The Phase 1 OHLCV data shape is defined in `docs/architecture/market_data_contract.md`.
+Validation, indicators, and scoring should use that contract once their implementation tickets
+begin.
+
 ## Phase 2: Category Expansion
 
 Add more market quality categories, broaden indicators, and improve score explanations while preserving explainability.

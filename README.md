@@ -47,6 +47,10 @@ Roadmap Governance: [docs/product/roadmap_governance.md](docs/product/roadmap_go
 Roadmap changes must be intentional and traceable. Vision, phases, epics, tickets, PRs, and
 commits should link together.
 
+Market Data Contract: [docs/architecture/market_data_contract.md](docs/architecture/market_data_contract.md).
+Phase 1 local sample OHLCV data must follow this contract before validation, indicators, or
+scoring are implemented.
+
 ## Project Structure
 
 ```text

@@ -46,3 +46,6 @@ after the global Definition of Done is satisfied.
 Tickets should trace back to a roadmap phase and epic. Roadmap changes follow
 `docs/product/roadmap_governance.md`. New ideas should be parked before they become
 implementation tickets.
+
+Phase 1 data tickets that depend on OHLCV input should reference
+`docs/architecture/market_data_contract.md`.
