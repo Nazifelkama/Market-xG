@@ -1,11 +1,12 @@
 # Scoring Model
 
-## Phase 1 System Flow
+## Current System Flow
 
-Phase 1 currently uses this deterministic local flow:
+The current deterministic local flow is:
 
-sample CSV -> validation -> indicators -> Trend and Momentum score -> Market xG aggregation
--> markdown report -> integration test
+sample CSV -> validation -> trend/momentum indicators -> volume indicators -> Trend and
+Momentum score -> Volume / Accumulation score -> Market xG aggregation -> markdown report ->
+integration test
 
 The sample fixture is synthetic/local only. It is not real S&P 500 market data, it is used
 for engineering validation only, and it must not be used for financial conclusions or
@@ -26,9 +27,17 @@ The initial Market xG score will be calculated from weighted category scores.
 | Volume and Accumulation | 5% |
 | Valuation | 5% |
 
-## Phase 1 Current Scope
+## Current Implemented Categories
 
-Only the Trend and Momentum category has an implemented score in Phase 1.
+The implemented category scores today are:
+
+- Trend / Momentum
+- Volume / Accumulation
+
+Volume / Accumulation uses deterministic volume indicators, a 50-day volume ratio, 20-day
+up/down volume participation, and an externally calculated 20-day price change.
+It does not directly infer accumulation or distribution labels from indicators.
+
 Other Market xG categories are configured as future categories only.
 Missing categories are reported explicitly and are not assigned fake scores.
 
@@ -40,10 +49,14 @@ Weights should be tuned later through historical validation. Backtests should ex
 
 ## Aggregation Decision
 
-Phase 1 aggregation can reweight available categories.
+The current Market xG aggregation can reweight available categories.
 Reweighting does not create fake category scores.
-When only `trend_momentum` is available, Market xG equals the `trend_momentum` score under
-reweighting.
+The sample pipeline now aggregates two implemented categories:
+
+- `trend_momentum`
+- `volume_accumulation`
+
+Remaining configured categories are still missing or future categories.
 
 ## Score Interpretation Limits
 
@@ -73,6 +86,6 @@ It does not write reports to disk.
 
 ## High-Level Next Direction
 
-At a high level, Volume / Accumulation is a logical next category because the sample fixture
-already includes volume.
+At a high level, future work may improve existing categories or add more independent
+categories.
 Real data provider work should remain separate from scoring-category expansion.

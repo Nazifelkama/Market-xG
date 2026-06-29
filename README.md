@@ -60,11 +60,12 @@ Synthetic sample data is for engineering tests only and must not be treated as a
 financial conclusions or historical backtesting.
 
 Scoring Model: [docs/architecture/scoring_model.md](docs/architecture/scoring_model.md).
-Phase 1 currently runs a deterministic local flow:
-sample CSV -> validation -> indicators -> Trend and Momentum score -> Market xG aggregation
--> markdown report -> integration test.
-Only the Trend and Momentum category is scored today. Missing categories are reported
-explicitly and are not assigned fake scores.
+The current deterministic local flow is:
+sample CSV -> validation -> trend/momentum indicators -> volume indicators -> Trend and
+Momentum score -> Volume / Accumulation score -> Market xG aggregation -> markdown report ->
+integration test.
+The implemented category scores today are Trend / Momentum and Volume / Accumulation.
+Remaining categories are reported explicitly as missing and are not assigned fake scores.
 
 ## Project Structure
 
@@ -90,17 +91,22 @@ scripts/               Developer scripts
 
 ## Current Status
 
-Phase 1 local scoring MVP. The repository currently supports a deterministic synthetic/local
-fixture flow for engineering validation only:
-sample OHLCV CSV -> validation -> indicators -> Trend and Momentum score -> weighted Market xG
-aggregation -> markdown report -> integration test.
+Phase 2 local scoring foundation. The repository currently supports a deterministic
+synthetic/local fixture flow for engineering validation only:
+sample OHLCV CSV -> validation -> trend/momentum indicators -> volume indicators -> Trend and
+Momentum score -> Volume / Accumulation score -> weighted Market xG aggregation -> markdown
+report -> integration test.
 
 The sample fixture is not real S&P 500 market data. It must not be used for financial
 conclusions or backtesting.
 
-Only the Trend and Momentum category has an implemented score in Phase 1. Other configured
-Market xG categories remain future categories, are reported as missing, and are not assigned
-fake scores.
+Trend / Momentum and Volume / Accumulation are the currently implemented category scores.
+Volume / Accumulation uses deterministic volume indicators, including a 50-day volume ratio,
+20-day up/down volume participation, and an externally calculated 20-day price change. It does
+not directly infer accumulation or distribution labels from indicators.
 
-Phase 1 scoring is heuristic, deterministic, and rule-based. It is not backtested or
+Other configured Market xG categories remain future categories, are reported as missing, and
+are not assigned fake scores.
+
+Current scoring is heuristic, deterministic, and rule-based. It is not backtested or
 calibrated yet, and it should be treated as product scaffolding rather than investment advice.
