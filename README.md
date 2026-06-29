@@ -51,6 +51,10 @@ Market Data Contract: [docs/architecture/market_data_contract.md](docs/architect
 Phase 1 local sample OHLCV data must follow this contract before validation, indicators, or
 scoring are implemented.
 
+Sample Market Data Fixture: [docs/architecture/sample_market_data.md](docs/architecture/sample_market_data.md).
+Phase 1 starts with deterministic local OHLCV sample data for repeatable tests and early
+pipeline work.
+
 ## Project Structure
 
 ```text

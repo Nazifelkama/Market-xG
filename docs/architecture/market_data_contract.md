@@ -57,6 +57,6 @@ Phase 1 OHLCV data must include these required columns:
 ## Phase 1 Constraint
 
 - Phase 1 uses deterministic local sample data only.
+- A committed reference fixture is documented in `docs/architecture/sample_market_data.md`.
 - No live data fetching is part of this ticket.
 - Validation code will be implemented in a later ticket.
-
