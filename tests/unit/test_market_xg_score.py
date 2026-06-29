@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import fields
+from typing import cast
 
 import pytest
 
@@ -45,12 +46,12 @@ def test_category_score_rejects_whitespace_only_name() -> None:
 
 def test_category_score_rejects_non_list_strengths() -> None:
     with pytest.raises(ValueError, match="strengths must be a list"):
-        CategoryScore("trend_momentum", 50.0, "bad", [])
+        CategoryScore("trend_momentum", 50.0, cast(list[str], "bad"), [])
 
 
 def test_category_score_rejects_non_list_weaknesses() -> None:
     with pytest.raises(ValueError, match="weaknesses must be a list"):
-        CategoryScore("trend_momentum", 50.0, [], "bad")
+        CategoryScore("trend_momentum", 50.0, [], cast(list[str], "bad"))
 
 
 def test_market_xg_score_rejects_score_below_zero() -> None:

@@ -123,4 +123,4 @@ def test_dataclass_is_frozen_and_immutable() -> None:
     result = available_indicator("sma_50", 123.4)
 
     with pytest.raises(FrozenInstanceError):
-        result.name = "sma_200"
+        setattr(result, "name", "sma_200")
