@@ -29,6 +29,16 @@ mypy src
 pytest --cov=market_xg --cov-report=term-missing
 ```
 
+## Way of Working
+
+The team workflow is documented in [docs/product/way_of_working.md](docs/product/way_of_working.md).
+One ticket equals one branch equals one pull request. Work is accepted only after tests, CI,
+and review.
+
+Local Checks and Commit Workflow: [docs/product/local_checks_and_commit_workflow.md](docs/product/local_checks_and_commit_workflow.md).
+Codex provides a review report before commit. Relevant local checks are used before review,
+and full CI checks happen on PR before merge.
+
 ## Project Structure
 
 ```text

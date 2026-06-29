@@ -13,3 +13,24 @@ documentation, tests, and decisions back to the planned work.
 Ticket status should be updated as work progresses. Keep ticket files grouped by sprint so the
 project history remains easy to scan.
 
+## Scope and Status
+
+Tickets are the source of implementation scope. Codex must not implement outside ticket scope.
+If a useful idea appears while working, it should be proposed as a follow-up ticket instead of
+being added silently.
+
+Ticket status must follow:
+
+- Not Started
+- In Progress
+- In Review
+- Done
+
+A ticket becomes Done only after merge to main. Pull requests should reference the relevant
+ticket file so reviewers can trace the implementation back to the original instructions.
+
+## Local Checks and Commit Workflow
+
+Ticket work should follow `docs/product/local_checks_and_commit_workflow.md`. Codex should wait
+for approval before commit/push. Local checks may be scoped to the ticket, while full CI remains
+the final automated quality gate before merge.

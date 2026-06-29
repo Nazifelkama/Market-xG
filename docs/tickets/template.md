@@ -5,6 +5,10 @@ Sprint: Sprint X
 Type: Documentation / Repo / CI / Feature / Test / Backtest
 Owner: Codex
 Reviewer: QA / PM
+Branch: ticket/MXG-XXX-short-title
+PR: TBD
+Created: YYYY-MM-DD
+Updated: YYYY-MM-DD
 
 ## Context
 
@@ -33,6 +37,8 @@ Describe the outcome this ticket should produce.
 ## Test Requirements
 
 - Define required automated and manual checks.
+- Relevant local checks before review.
+- Full CI before merge.
 
 ## Definition of Done
 
@@ -40,8 +46,13 @@ Describe the outcome this ticket should produce.
 - Tests and checks pass.
 - Acceptance criteria are satisfied.
 - Relevant documentation is updated.
+- Relevant local checks before review.
+- Full CI before merge.
 
-## Notes / Decisions
+## Review Notes
 
-Record any implementation notes, assumptions, or decisions made while completing the ticket.
+Record review feedback, QA notes, and follow-up observations.
 
+## Decision Log
+
+Record implementation notes, assumptions, or decisions made while completing the ticket.
