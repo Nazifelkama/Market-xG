@@ -59,6 +59,13 @@ Real Data Strategy: [docs/architecture/real_data_strategy.md](docs/architecture/
 Synthetic sample data is for engineering tests only and must not be treated as a basis for
 financial conclusions or historical backtesting.
 
+Scoring Model: [docs/architecture/scoring_model.md](docs/architecture/scoring_model.md).
+Phase 1 currently runs a deterministic local flow:
+sample CSV -> validation -> indicators -> Trend and Momentum score -> Market xG aggregation
+-> markdown report -> integration test.
+Only the Trend and Momentum category is scored today. Missing categories are reported
+explicitly and are not assigned fake scores.
+
 ## Project Structure
 
 ```text
@@ -83,5 +90,17 @@ scripts/               Developer scripts
 
 ## Current Status
 
-Phase 0 foundation. The repository contains documentation, packaging configuration,
-placeholder modules, and automated checks. Market logic is intentionally not implemented yet.
+Phase 1 local scoring MVP. The repository currently supports a deterministic synthetic/local
+fixture flow for engineering validation only:
+sample OHLCV CSV -> validation -> indicators -> Trend and Momentum score -> weighted Market xG
+aggregation -> markdown report -> integration test.
+
+The sample fixture is not real S&P 500 market data. It must not be used for financial
+conclusions or backtesting.
+
+Only the Trend and Momentum category has an implemented score in Phase 1. Other configured
+Market xG categories remain future categories, are reported as missing, and are not assigned
+fake scores.
+
+Phase 1 scoring is heuristic, deterministic, and rule-based. It is not backtested or
+calibrated yet, and it should be treated as product scaffolding rather than investment advice.
