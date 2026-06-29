@@ -56,6 +56,9 @@ Work is complete locally and awaiting PR review / CI.
 
 Work is merged to main after review and passing CI.
 
+Ticket status can move to Done only when the Definition of Done is satisfied. The project-wide
+Definition of Done is documented in `docs/test_strategy/definition_of_done.md`.
+
 ## Standard Workflow
 
 1. Pick one ticket.

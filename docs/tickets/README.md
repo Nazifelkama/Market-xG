@@ -34,3 +34,9 @@ ticket file so reviewers can trace the implementation back to the original instr
 Ticket work should follow `docs/product/local_checks_and_commit_workflow.md`. Codex should wait
 for approval before commit/push. Local checks may be scoped to the ticket, while full CI remains
 the final automated quality gate before merge.
+
+## Definition of Done
+
+Every ticket should be evaluated against `docs/test_strategy/definition_of_done.md`.
+Ticket-specific Definition of Done may add stricter requirements. A ticket becomes Done only
+after the global Definition of Done is satisfied.

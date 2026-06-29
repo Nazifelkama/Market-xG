@@ -39,6 +39,10 @@ Local Checks and Commit Workflow: [docs/product/local_checks_and_commit_workflow
 Codex provides a review report before commit. Relevant local checks are used before review,
 and full CI checks happen on PR before merge.
 
+Definition of Done: [docs/test_strategy/definition_of_done.md](docs/test_strategy/definition_of_done.md).
+Relevant local checks happen before review, full CI is required before merge, and a ticket is
+Done only after merge to main.
+
 ## Project Structure
 
 ```text

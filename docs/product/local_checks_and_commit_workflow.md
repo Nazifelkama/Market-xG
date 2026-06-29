@@ -55,6 +55,10 @@ Full checks are expected on PR through CI. A PR cannot be merged until CI is gre
 
 Local checks are for fast feedback. CI is the final automated quality gate.
 
+Local checks support review but do not replace the Definition of Done. Full CI and review are
+still required before merge. The Definition of Done is documented in
+`docs/test_strategy/definition_of_done.md`.
+
 ## Review Report Format
 
 Codex must provide:
@@ -81,4 +85,3 @@ waiting for approval.
 
 Commit message must include the ticket ID. Commit only files related to the approved ticket.
 Do not combine unrelated tickets in one commit after this workflow is adopted.
-

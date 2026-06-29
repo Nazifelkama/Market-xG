@@ -42,6 +42,7 @@ Describe the outcome this ticket should produce.
 
 ## Definition of Done
 
+- Use docs/test_strategy/definition_of_done.md as the global quality gate.
 - Code or documentation changes are complete.
 - Tests and checks pass.
 - Acceptance criteria are satisfied.
