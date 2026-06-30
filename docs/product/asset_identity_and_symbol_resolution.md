@@ -146,6 +146,15 @@ preserve the provider-specific `source_symbol` used to fetch or import data.
 
 The product should not assume that one symbol format works across all providers.
 
+## Provider Mapping Reference
+
+Asset identity is product-level. Provider symbols are provider-specific. Symbol resolution should
+eventually map user search to a selected asset identity and provider symbol.
+
+A provider-symbol-only MVP may be used before full user-friendly search exists. Provider symbol
+candidates must be verified during implementation. See
+`docs/product/real_market_data_provider_strategy.md`.
+
 ## Failure and Attention States
 
 The product should enter `failed` or `needs_user_attention` for scenarios such as:

@@ -87,6 +87,13 @@ The selected asset identity should travel through the analysis and watchlist wor
 displays can show symbol, exchange, currency, and source consistently. See
 `docs/product/asset_identity_and_symbol_resolution.md`.
 
+## Real Data Provider Reference
+
+Real data provider strategy is the intended data path for asset analysis. Manual CSV import is
+out of current scope. Provider fetching happens after asset identity is selected and before
+validation and indicator calculation. See
+`docs/product/real_market_data_provider_strategy.md`.
+
 ## Watchlist Item Concept
 
 This is a future product contract only. No storage or scheduling is implemented in this ticket.
