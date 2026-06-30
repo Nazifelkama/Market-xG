@@ -78,6 +78,15 @@ The existing engine begins only after valid OHLCV data is available. Asset searc
 resolution, data-provider access, and watchlist persistence are future layers around the
 existing engine.
 
+## Asset Identity Reference
+
+Asset analysis must start from a selected asset identity. Symbol resolution happens before data
+loading. If symbol resolution is ambiguous, analysis should not proceed automatically.
+
+The selected asset identity should travel through the analysis and watchlist workflow so result
+displays can show symbol, exchange, currency, and source consistently. See
+`docs/product/asset_identity_and_symbol_resolution.md`.
+
 ## Watchlist Item Concept
 
 This is a future product contract only. No storage or scheduling is implemented in this ticket.
