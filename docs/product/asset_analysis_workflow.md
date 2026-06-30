@@ -94,6 +94,11 @@ out of current scope. Provider fetching happens after asset identity is selected
 validation and indicator calculation. See
 `docs/product/real_market_data_provider_strategy.md`.
 
+## Technical UAT Reference
+
+Technical UAT validates the provider-analysis path before live provider-symbol execution and
+before full product UAT. See `docs/uat/provider_based_analysis_technical_uat.md`.
+
 ## Watchlist Item Concept
 
 This is a future product contract only. No storage or scheduling is implemented in this ticket.
