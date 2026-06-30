@@ -9,6 +9,9 @@ Technical UAT is not final product UAT. It does not require asset search UI, wat
 scheduled refresh, or live provider calls in CI. It focuses on whether already-fetched provider
 data can produce an understandable, safe, and technically valid Market xG result.
 
+Technical UAT execution results are recorded in
+`docs/uat/provider_based_analysis_technical_uat_results.md`.
+
 ## Current Technical Path Under UAT
 
 `Already-fetched StooqHistoricalResponse -> Stooq normalization -> OHLCV validation -> indicator
