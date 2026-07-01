@@ -61,6 +61,9 @@ Possible technical MVP:
 - provider-symbol entry is a technical stepping stone, not the final product experience
 - direct provider symbols must still map to explicit asset identity metadata before analysis
 
+See `docs/product/provider_symbol_live_execution_contract.md` for the interim provider-symbol
+live execution contract.
+
 ## Stooq Symbol Candidates and Assumptions
 
 Stooq uses provider-specific symbol formats. Candidate provider symbols may include:

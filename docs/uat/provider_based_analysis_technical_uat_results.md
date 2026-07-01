@@ -134,3 +134,6 @@ Because Technical UAT result is PASS, likely next steps are:
 - Define provider-symbol live execution contract.
 - Implement provider-symbol analysis service v0.1.
 - Manually verify selected Stooq provider symbols outside CI.
+
+The provider-symbol live execution contract is documented in
+`docs/product/provider_symbol_live_execution_contract.md`.

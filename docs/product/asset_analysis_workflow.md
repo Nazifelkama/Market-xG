@@ -94,6 +94,10 @@ out of current scope. Provider fetching happens after asset identity is selected
 validation and indicator calculation. See
 `docs/product/real_market_data_provider_strategy.md`.
 
+Interim direct provider-symbol execution is documented in
+`docs/product/provider_symbol_live_execution_contract.md`. It is not the final user-friendly
+asset search experience.
+
 ## Technical UAT Reference
 
 Technical UAT validates the provider-analysis path before live provider-symbol execution and
